@@ -24,6 +24,10 @@ Creating a `virtualenv` on both Linux and OS X is as simple as running:
 
     ~$ python3 -m venv blog
 
+You might get an error in Ubuntu 14.04. Try:
+
+    ~$ python3 -m venv blog --without-pip
+
 ## Working with virtualenv
 
 The command above will create a folder called `blog` that contains our virtual environment (basically bunch of folders and files). All we want to do now is starting it by running:
@@ -90,6 +94,10 @@ If that goes well, you'll see something like this
     Installing collected packages: psycopg2
     Successfully installed psycopg2
     Cleaning up...
+
+It might not go well with Ubuntu 14.04 though. Try anstalling it via apt-get:
+
+    (blog) ~$ sudo apt-get install python-psycopg2
 
 ---
 
